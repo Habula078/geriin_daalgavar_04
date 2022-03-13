@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>JavaScript object-н урт нь: </title>
+</head>
+  
+<body>
+    <b>JavaScript object-н уртыг олох програм бичэх</b>
+      
+    <p>
+            City:   "Ulaanbaatar",
+                    "London",
+                    "Seoul",
+                    "Berlin"
+    </p>
+      
+    <p>
+        JavaScript object-н урт нь: 
+        <span class="output"></span>
+    </p>
+  
+    <button onclick="getObjectLength()">
+        Уртыг нь харах
+    </button>
+      
+    <script>
+        function getObjectLength() {   
+            var student = {
+                Name: "Enma",
+                Sclass: "VI",
+                Age: 18
+            }
+            objectLenght = Object.keys(student).length;
+            document.querySelector('.output').textContent
+                    = objectLenght;
+        }
+    </script>
+</body>
+  
+</html>   
